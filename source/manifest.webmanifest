@@ -1,9 +1,0 @@
-{
-    "name": "Leloh Therapy",
-    "short_name": "Leloh Therapy",
-    "display": "standalone",
-    "version": "1.0",
-    "manifest_version": 2,
-    "theme_color": "#F9CC48",
-    "background_color": "#f5f5f5"
-}
