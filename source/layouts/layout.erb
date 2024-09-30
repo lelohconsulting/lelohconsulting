@@ -1,0 +1,395 @@
+<!doctype html>
+<html class="no-js" lang="<%if lang_helper == '/fr/'%>fr<%else%>en<%end%>">
+<%=partial "partials/head"%>
+
+<body>
+  <header>
+    <!-- Contact bar -->    
+    <div class="container-fluid contact-bar">
+      <div class="row">
+        <div class="col-6">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="<%=data.settings.s.fb_link%>" target="_blank"
+                aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<%=data.settings.s.ig_link%>" target="_blank"
+                aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<%=data.settings.s.x_link%>" target="_blank"
+                aria-label="Twitter / X">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6">          
+          <ul class="nav justify-content-end">            
+            <li class="nav-item justify-content-end d-none d-sm-none d-md-block">
+              <a class="btn me-2 <%=activeEnglish%>" href="<%=englishUrl%>">
+                EN
+              </a>
+            </li>
+            <li class="nav-item justify-content-end d-none d-sm-none d-md-block">
+              <a class="btn me-2 <%=activeFrench%>" href="<%=frenchUrl%>">
+                FR
+              </a>
+            </li>              
+            <li class="nav-item justify-content-end">
+              <button class="btn btn-book shadow-sm"
+              data-bs-toggle="offcanvas" data-bs-target="#book-now-oc" aria-controls="book-now-oc">
+                <%= t(:book_a_session) %>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-0 mx-md-auto d-lg-none" href="<%=lang_helper%>">
+          <img src="/images/logo.png" class="logo-mobile" alt="Logo">
+        </a>
+              
+        <button class="navbar-toggler shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+          <ul class="navbar-nav mx-auto mb-lg-0">
+            <li class="nav-item me-lg-2">
+              <a class="nav-link rounded <% if current_page.data.active == "home" %> active <% end %>" href="<%=lang_helper%>">
+                <%= t(:home) %>
+              </a>
+            </li>
+            <li class="nav-item me-lg-2">
+              <a class="nav-link rounded <% if current_page.data.active == "services" %> active <% end %>" href="<%=lang_helper%>services">
+                <%= t(:services) %>
+              </a>
+            </li>
+            
+            <li class=" d-lg-block d-md-none d-sm-none d-none">
+              <a class="navbar-brand" href="<%=lang_helper%>">
+                <img src="/images/logo.png" class="logo" alt="Logo">
+              </a>
+            </li>
+            
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link rounded <% if current_page.data.active == "about" %> active <% end %>" href="<%=lang_helper%>about-us">
+                <%= t(:about) %>
+              </a>
+            </li>            
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link rounded <% if current_page.data.active == "contact" %> active <% end %>" href="<%=lang_helper%>contact-us">
+                <%= t(:contact) %>
+              </a>
+            </li>
+            <li class="nav-item ms-lg-2 d-lg-none">
+              <a class="<%=activeEnglish%> nav-link rounded" href="<%=englishUrl%>">
+                <i class="bi bi-translate"></i>
+                English
+              </a>
+            </li>
+            <li class="nav-item ms-lg-2 d-lg-none">
+              <a class="<%=activeFrench%> nav-link rounded" href="<%=frenchUrl%>">
+                <i class="bi bi-translate"></i>
+                French
+              </a>
+            </li>            
+          </ul>
+        </div>
+    </nav>
+  </header>
+
+  <!-- Site Content -->
+  <%= yield %>
+
+  <!-- Crisis Note -->
+  <%if lang_helper == '/'%>
+  <div class="section-lg section-gray section-border-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>
+            <strong>
+              If you are in a crisis or any other person may be in danger - don't use this site. <br />
+              <a href="#external-help" class="link-highlight"
+              data-bs-toggle="offcanvas" data-bs-target="#external-resources-oc" aria-controls="external-resources-oc">
+                These resources
+              </a>
+              can provide you with immediate help.
+            </strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+
+  <%if lang_helper == '/fr/'%>
+  <!-- Crisis Note -->
+  <div class="section-lg section-gray section-border-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>
+            <strong>
+              Si vous êtes en crise ou si toute autre personne peut être en danger, n'utilisez pas ce site. <br>          
+              <a href="#external-help" class="link-highlight"
+              data-bs-toggle="offcanvas" data-bs-target="#external-resources-oc" aria-controls="external-resources-oc">
+                Ces ressources   
+              </a>                            
+              peuvent vous fournir une aide immédiate.                                          
+            </strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+  
+  <!-- Footer -->
+  <%= partial "partials/footer"%>  
+  
+  <script src="/javascripts/bootstrap.min.js">
+  </script>
+
+  <script src="/javascripts/scroll-entrance.js">
+  </script>
+
+  <!-- External Resources - off canvas -->  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="external-resources-oc" aria-labelledby="Book now">
+    <div class="offcanvas-header section-border-top section-border-bottom">
+      <h5 class="offcanvas-title title title-underline" id="offcanvasExampleLabel">
+        External Help
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="mb-3">
+        <h5 class="title-underline title-underline-xs">
+          Canada
+        </h5>
+        <p>
+          <strong>
+          Emergency
+          </strong>
+          <br>
+          <a href="tel:911">911</a>
+        </p>
+        <p>
+          <strong> Suicide & Crisis Lifeline</strong> Call or text 
+          <br>
+          <a href="tel:988">988</a>
+        </p>
+        <p>
+          <strong>Mental Health Crisis Intervention Team</strong> Call 
+          <br>
+          <a href="tel:211">211</a>
+        </p>
+        <p>
+          <strong>
+          Crisis Text Line (Powered by Kids Help Phone)
+          </strong>          
+          Text "DESERVE" TO 
+          <br>
+          <a href="tel:686868">686868</a>
+        </p>
+        <p>
+          <strong>
+          YourLifeCounts.org
+          </strong>
+          <br>
+          <a href="https://yourlifecounts.org/find-help/">https://yourlifecounts.org/find-help/</a>
+        </p>
+        <p>
+          <strong>
+          Crisis Services Canada
+          </strong>
+          <br>
+          <a href="http://www.crisisservicescanada.ca/en/">http://www.crisisservicescanada.ca/en/</a>
+        </p>
+        <p>
+          <strong>
+          Canadian Association for Suicide Prevention
+          </strong> 
+          <br>
+          <a href="https://suicideprevention.ca/need-help/">
+            https://suicideprevention.ca/need-help/
+          </a>
+        </p>        
+      </div>
+      <div class="mb-3">
+        <h5 class="title-underline title-underline-xs">
+          United States
+        </h5>
+        <p>
+          <strong>Emergency</strong> 
+          <br>
+          <a href="tel:911">911</a>
+        </p>
+        <p>
+          <strong> Suicide & Crisis Lifeline</strong> Call or text 
+          <br>
+          <a href="tel:988">988</a>
+        </p>
+        <p>
+          <strong>National Domestic Violence Hotline</strong> 
+          <br>
+          <a href="tel:18007997233">1-800-799-7233</a>
+        </p>
+        <p>
+          <strong> Crisis Text Line</strong> Text "DESERVE" TO 
+          <br>
+          <a href="tel:741741">741-741</a>
+        </p>
+        <p>
+          <strong> Lifeline Crisis Chat (Online live messaging) </strong> 
+          <br>
+          <a href="https://988lifeline.org/chat">https://988lifeline.org/chat</a>
+        </p>
+        <p>
+          <strong>
+          Self-Harm Hotline
+          </strong> 
+          <br>
+          1-800-DONT CUT 
+          <a href="tel:18003668288">
+            (1-800-366-8288)
+          </a>          
+        </p>
+        <p>
+          <strong>
+          Essential local and community services
+          </strong>
+          <br>
+          211, 
+          <a href="https://www.211.org/">
+            https://www.211.org/
+          </a>          
+        </p>
+        <p>
+          <strong>
+          Planned Parenthood Hotline
+          </strong>
+          <br>
+          <a href="tel:18002307526">
+            1-800-230-PLAN (7526) 
+          </a>
+          
+        </p>
+        <p>
+          <strong>
+          American Association of Poison Control Centers
+          </strong>
+          <br>
+          <a href="tel:18002221222">
+            1-800-222-1222
+          </a>
+          
+        </p>
+        <p>
+          <strong>
+          National Council on Alcoholism & Drug Dependency Hope Line
+          </strong>
+          <br>
+          <a href="tel:18006222255">
+            1-800-622-2255
+          </a>          
+        </p>
+        <p>
+          <strong>
+          National Crisis Line - Anorexia and Bulimia
+          </strong>
+          <br>
+          <a href="tel:1-800-233-4357">
+            1-800-233-4357
+          </a>          
+        </p>
+        <p>
+          <strong>
+          LGBT Hotline
+          </strong> 
+          <br>
+          <a href="tel:18888434564">
+            1-888-843-4564
+          </a>          
+        </p>
+        <p>
+          <strong>
+          TREVOR Crisis Hotline
+          </strong> 
+          <br>
+          <a href="tel:18664887386">
+            1-866-488-7386
+          </a>
+          
+        </p>
+        <p>
+          <strong>
+          AIDS Crisis Line
+          </strong> 
+          <br>
+          <a href="tel:18002217044">
+            1-800-221-7044
+          </a>
+          
+        </p>
+        <p>
+          <strong>
+          Veterans Crisis Line
+          </strong> 
+          <br>
+          <a href="https://www.veteranscrisisline.net">
+            https://www.veteranscrisisline.net
+          </a>          
+        </p>
+        <p>
+          <strong>
+          TransLifeline
+          </strong> 
+          <br>
+          <a href="https://www.translifeline.org">https://www.translifeline.org</a> 
+          - 
+          <a href="tel:8775658860">
+            877-565-8860
+          </a>          
+        </p>        
+      </div>      
+    </div>
+  </div>
+
+  <!-- Book now - off canvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="book-now-oc" aria-labelledby="Book now">
+    <div class="offcanvas-header section-border-top section-border-bottom">
+      <h5 class="offcanvas-title title title-underline" id="offcanvasExampleLabel">
+        <%= t(:book_a_session) %>
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="mb-3">
+        <a href="<%=lang_helper%>book">
+          <i class="bi bi-link-45deg icon-primary rounded me-1"></i>
+          <%=data.settings.s.book_link_name%>
+        </a>
+      </div>
+
+      <div class="mb-3">
+        <a href="mailto:<%=data.settings.s.book_email%>">
+          <i class="bi bi-envelope-at icon-primary rounded me-1"></i>
+          <%=data.settings.s.book_email%>
+        </a>
+      </div>   
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+---
+layout: layout
+active: services
+title: Prestations de service
+titleDescription: Nous vous invitons à entreprendre un voyage de guérison où votre identité culturelle n'est pas seulement reconnue, mais tissée dans la trame de votre expérience thérapeutique. Bienvenue dans un espace où vous êtes vu, entendu et soutenu sur votre chemin vers le bien-être.
+description: Découvrez tous les services que nous proposons chez Leloh Therapy
+---
+
+<!-- Page header -->
+<div class="section hero-section">
+  <div class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-12 col-lg-6">
+          <h1 class="text-center title-underline title-underline-center title-underline-md">
+            <%= current_page.data.title %>
+          </h1>
+          <h5 class="text-center">
+            <%= current_page.data.titleDescription %>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mt-3 mb-0">
+          <li class="breadcrumb-item">
+            <a href="<%=lang_helper%>">
+            <%= t(:home) %>
+            </a>
+          </li>          
+          <li class="breadcrumb-item active" aria-current="page">
+          <%= t(:services) %>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <% data.services.s.each do |service| %>
+      <div id="<%=service.link%>" class="col-md-12 col-sm-12 col-12 col-lg-12 col-xl-6 mb-3">
+        <div class="hero-card shadow-sm h-100 d-inline-block">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+              <div class="hero-card-image-holder d-flex align-items-center justify-content-center mt-lg-3">
+                <img src="<%=service.illustration%>" class="img-fluid hero-card-image" data-entrance="from-bottom">
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+              <div class="hero-card-title mt-lg-3">
+                <%=service.title%>
+              </div>
+              <div class="hero-card-content mb-3">
+                <%=service.description%>            
+              </div>
+
+              <%if service.isBook == 'true'%>
+              <div class="hero-card-action-holder">
+                <div class="hero-card-action">
+                  <button class="btn btn-book shadow-sm float-end"
+                  data-bs-toggle="offcanvas" data-bs-target="#book-now-oc" aria-controls="book-now-oc">
+                    <%= t(:book_a_session) %>
+                  </button>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+              </div>               
+              <%end%>
+            </div>    
+          </div>                          
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

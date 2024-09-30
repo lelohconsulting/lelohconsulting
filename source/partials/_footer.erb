@@ -1,0 +1,164 @@
+<footer>
+  <div class="section-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <ul>
+            <li>
+              <strong>
+                Leloh Therapy
+              </strong>            
+            </li>
+            <li>
+              <a href="<%=lang_helper%>">
+                <%= t(:home) %>
+              </a>  
+            </li>
+            <li>
+              <a href="<%=lang_helper%>services">
+                <%= t(:services) %>
+              </a>
+            </li>
+            <li>
+              <a href="<%=lang_helper%>about-us">
+                <%= t(:about) %>
+              </a>
+            </li>
+            <li>
+              <a href="<%=lang_helper%>contact-us">
+                <%= t(:contact) %>
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Services -->
+        <div class="col-12 col-md-3">
+          <ul>
+            <li>
+              <strong>
+                <%= t(:services) %>
+              </strong>
+            </li>
+            <% data.services.s.each do |service| %>
+            <li>
+              <%if lang_helper == '/'%>
+              <a href="<%=lang_helper%>services#<%=service.link%>">
+                <%=service.title%>
+              </a>
+              <%end%>
+  
+              <%if lang_helper == '/fr/'%>
+              <a href="<%=lang_helper%>services#<%=service.link%>">
+                <%=service.titleFr%>
+              </a>
+              <%end%>            
+            </li>
+            <% end %>
+          </ul>
+        </div>
+  
+        <!-- About us -->
+        <div class="col-12 col-md-3">
+          <ul>
+            <li>
+              <strong>
+                <%= t(:about) %>
+              </strong>
+            </li>
+            <li>
+              <a href="therapist">
+                <%= t(:meet_the_therapist) %>
+              </a>
+            </li>
+            <li>
+              <a href="values">
+                <%= t(:our_vision) %>
+              </a>
+            </li>
+            <li>
+              <a href="faq">
+                F.A.Q
+              </a>
+            </li>            
+          </ul>
+        </div>
+  
+        <!-- Contact Us -->
+        <div class="col-12 col-md-3">
+          <ul>
+            <li>
+              <strong>
+                <%= t(:book_a_session) %>              
+              </strong>
+            </li>
+            <li>            
+              <a href="tel:<%=data.settings.s.book_link%>">
+                <i class="bi bi-link-45deg icon-primary rounded"></i>
+                <%=data.settings.s.book_link_name%>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:<%=data.settings.s.book_email%>">
+                <i class="bi bi-envelope-at icon-primary rounded"></i>
+                <%=data.settings.s.book_email%>
+              </a>
+            </li>
+          </ul>
+  
+          <ul>
+            <li>
+              <strong>
+                <%= t(:contact) %>              
+              </strong>
+            </li>
+            <li>
+              <a href="mailto:<%=data.settings.s.email%>">
+                <i class="bi bi-envelope-at icon-primary rounded"></i>
+                <%=data.settings.s.email%>
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <strong>
+                <%= t(:social) %>              
+              </strong>
+            </li>
+            <li>
+              <a class="icon-primary icon-inline-block rounded me-2" href="<%=data.settings.s.fb_link%>" aria-label="Facebook" target="_blank">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a class="icon-primary icon-inline-block rounded me-2" href="<%=data.settings.s.ig_link%>" aria-label="Instagram" target="_blank">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a class="icon-primary icon-inline-block rounded me-2" href="<%=data.settings.s.x_link%>" aria-label="Twitter / X" target="_blank">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </li>            
+          </ul>
+
+        </div>  
+      </div>      
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="<%=lang_helper%>privacy-policy">
+              <%= t(:privacy_policy) %>
+            </a>
+          </li>          
+        </ul>
+      </div>
+      <div class="col-6">        
+        <p class="text-end nav-link">
+          <%= t(:rights) %>
+        </p>                  
+      </div>
+    </div>
+  </div>
+</footer>

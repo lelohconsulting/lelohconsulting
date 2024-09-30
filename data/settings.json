@@ -1,0 +1,22 @@
+{
+  "s": {
+    "email": "info@lelohtherapy.com",
+    "phone": "(647) 502-4561",
+    "phoneraw": "6475024561",
+    
+    "x_link": "https://x.com",
+    "fb_link": "https://facebook.com",
+    "ig_link": "https://ig.com",
+    "x": {
+      "username": "middlemanx",
+      "card": "summary"
+    },
+    "book_phone": "(647) 502-4561",
+    "book_phone_raw": "6475024561",
+    "book_link_name": "Book online",
+    "book_link": "https://therapy.com",
+    "book_email": "book@lelohtherapy.com",
+    "url": "https://lsardinas.github.io",
+    "logo": "/images/logo.png"
+  }
+}

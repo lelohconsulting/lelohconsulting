@@ -1,0 +1,74 @@
+---
+layout: layout
+active: book
+title: Book a session 
+titleDescription: At Leloh Therapy, we are committed to creating a safe and inclusive space for Black Francophones. Our mission is to normalize mental health conversations and support our community through culturally sensitive care. Thank you for prioritizing your well-being with us; we look forward to supporting you on your journey.
+---
+
+<!-- Page header -->
+<div class="section hero-section">
+  <div class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-12 col-lg-6">
+          <h1 class="text-center title-underline title-underline-center title-underline-md">
+            <%= current_page.data.title %>
+          </h1>
+          <h5 class="text-center">
+            <%= current_page.data.titleDescription %>                
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mt-3 mb-0">
+          <li class="breadcrumb-item">
+            <a href="<%=lang_helper%>">
+              Home
+            </a>
+          </li>          
+          <li class="breadcrumb-item active" aria-current="page">
+            Book a session
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div id="book-form" class="section-lg">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <iframe class="google-book-form"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSd3tj0_v8-Ams9_jj1XbFyoA-0tDOEVA90jagHKmyz6QFnd9A/viewform?embedded=true" 
+          width="100%" 
+          frameborder="0" 
+          marginheight="0" 
+          marginwidth="0">
+          Loading…
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var element = document.getElementById("book-form");
+  const y = element.getBoundingClientRect().top + window.scrollY;
+  document.querySelector("iframe").addEventListener("load", 
+  function() {
+      window.scrollTo({
+      top: y,
+      left: 0,
+      behavior: 'smooth'
+    });
+  });
+
+</script>  

@@ -1,0 +1,134 @@
+---
+layout: layout
+active: contact
+title: Contact Us 
+titleDescription: Feel free to contact us with any questions about therapy, particularly if it's your first time, as we recognize it can be a challenging endeavor.
+---
+
+<!-- Page header -->
+<div class="section hero-section">
+  <div class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-12 col-lg-6">
+          <h1 class="text-center title-underline title-underline-center title-underline-md">
+            <%= current_page.data.title %>
+          </h1>
+          <h5 class="text-center">
+            <%= current_page.data.titleDescription %>                
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mt-3 mb-0">
+          <li class="breadcrumb-item">
+            <a href="<%=lang_helper%>">
+              Home
+            </a>
+          </li>          
+          <li class="breadcrumb-item active" aria-current="page">
+            Contact
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="section-lg">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <!-- Contact form 
+        the iframe below I need to reize it base on the content of the form 
+        -->
+        <iframe class="google-contact-form"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSftCEM3wnmRiKD6zmW6K6qCtEITJE_EqZLjF6o-0uJU4y_VUA/viewform?embedded=true" 
+          width="100%" 
+          frameborder="0" 
+          marginheight="0" 
+          marginwidth="0">
+        </iframe>
+
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- About -->
+<div class="section-lg">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="mb-3">
+
+          <div class="generic-card rounded shadow-sm">
+            <div class="generic-card-image-holder">
+              <i class="bi bi-link-45deg generic-card-icon"></i>
+            </div>
+            <div class="generic-card-content">
+              <p>
+                Book an appointment online or review your schedule
+              </p>
+
+              <a href="<%=data.settings.s.book_link%>" class="text-center generic-card-full-link btn btn-light">
+                <%=data.settings.s.book_link_name%>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="mb-3">
+
+          <div class="generic-card rounded shadow-sm">
+            <div class="generic-card-image-holder">
+              <i class="bi bi-envelope-at generic-card-icon"></i>              
+            </div>
+            <div class="generic-card-content">
+              <p>
+                Send us an email if you have questions or would like to book an appointment
+              </p>
+
+              <a href="mailto:<%=data.settings.s.book_email%>" class="text-center generic-card-full-link btn btn-light">
+                <%=data.settings.s.book_email%>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="mb-3">
+
+          <div class="generic-card rounded shadow-sm">
+            <div class="generic-card-image-holder">
+              <i class="bi bi-telephone generic-card-icon"></i>                   
+            </div>
+            <div class="generic-card-content">
+              <p>
+                Call us for scheduling a meeting or discussing your concerns
+              </p>
+
+              <a href="tel:<%=data.settings.s.book_phone_raw%>" class="text-center generic-card-full-link btn btn-light">
+                <%=data.settings.s.book_phone%>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

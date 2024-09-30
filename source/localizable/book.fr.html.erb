@@ -1,0 +1,74 @@
+---
+layout: layout
+active: book
+title: Réservez une séance
+titleDescription: Chez Leloh Thérapie, nous nous engageons à créer un espace sûr et inclusif pour les Francophones Noirs. Notre mission est de normaliser les conversations sur la santé mentale et de soutenir notre communauté grâce à des soins culturellement sensibles. Merci de prioriser votre bien-être avec nous; nous avons hâte de vous accompagner dans votre parcours.
+---
+
+<!-- Page header -->
+<div class="section hero-section">
+  <div class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-12 col-lg-6">
+          <h1 class="text-center title-underline title-underline-center title-underline-md">
+            <%= current_page.data.title %>
+          </h1>
+          <h5 class="text-center">
+            <%= current_page.data.titleDescription %>                
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mt-3 mb-0">
+          <li class="breadcrumb-item">
+            <a href="<%=lang_helper%>">
+              <%= t(:home) %>
+            </a>
+          </li>          
+          <li class="breadcrumb-item active" aria-current="page">
+            <%= t(:book_a_session) %>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div id="book-form" class="section-lg">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <iframe class="google-book-form"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSd3tj0_v8-Ams9_jj1XbFyoA-0tDOEVA90jagHKmyz6QFnd9A/viewform?embedded=true" 
+          width="100%" 
+          frameborder="0" 
+          marginheight="0" 
+          marginwidth="0">
+          Loading…
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var element = document.getElementById("book-form");
+  const y = element.getBoundingClientRect().top + window.scrollY;
+  document.querySelector("iframe").addEventListener("load", 
+  function() {
+      window.scrollTo({
+      top: y,
+      left: 0,
+      behavior: 'smooth'
+    });
+  });
+
+</script>  

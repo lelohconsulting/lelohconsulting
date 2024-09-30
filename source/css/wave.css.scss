@@ -1,0 +1,91 @@
+//
+// Wave home page animation
+//
+$primary-color-light: #FAD98A;
+$background-color: #fbfaf8;
+
+.wave-left {
+  background: $background-color;
+  background: linear-gradient(0deg, $background-color 40%, $primary-color-light 100%);
+  border-radius: 500% 1000% 0 0;
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  animation: wave-left 16s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave-right {
+  background: $background-color;
+  background: linear-gradient(0deg, $background-color 40%, $primary-color-light 100%);
+  border-radius: 1000% 500% 0 0;
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  animation: wave-right 16s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.2;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  top: 25px;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.1;
+}
+
+.wave:nth-of-type(3) {
+  top: 50px;
+  animation: wave 20s -1s linear reverse infinite;
+  opacity: 0.1;
+}
+
+@keyframes wave-left {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-50%);
+  }
+
+  50% {
+      transform: translateX(-100%);
+  }
+
+  75% {
+      transform: translateX(-50%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
+
+@keyframes wave-right {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(50%);
+  }
+
+  50% {
+      transform: translateX(100%);
+  }
+
+  75% {
+      transform: translateX(50%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}

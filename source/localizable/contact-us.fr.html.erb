@@ -1,0 +1,112 @@
+---
+layout: layout
+active: contact
+title: Contactez-nous
+titleDescription: N'hésitez pas à nous contacter pour toute question sur la thérapie, surtout si c'est votre première fois, car nous sommes conscients que cela peut être une entreprise difficile.
+description: Prenez rendez-vous en ligne ou consultez votre emploi du temps
+---
+
+<!-- Page header -->
+<div class="section hero-section">
+  <div class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-12 col-lg-6">
+          <h1 class="text-center title-underline title-underline-center title-underline-md">
+            <%= current_page.data.title %>
+          </h1>
+          <h5 class="text-center">
+            <%= current_page.data.titleDescription %>                
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mt-3 mb-0">
+          <li class="breadcrumb-item">
+            <a href="<%=lang_helper%>">
+              <%= t(:home) %>
+            </a>
+          </li>          
+          <li class="breadcrumb-item active" aria-current="page">
+            <%= t(:contact) %>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- About -->
+<div class="section-lg">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="mb-3">
+
+          <div class="generic-card rounded shadow-sm">
+            <div class="generic-card-image-holder">
+              <i class="bi bi-link-45deg generic-card-icon"></i>
+            </div>
+            <div class="generic-card-content">
+              <p>
+                Prenez rendez-vous en ligne ou consultez votre emploi du temps
+              </p>
+
+              <a href="<%=data.settings.s.book_link%>" class="text-center generic-card-full-link btn btn-light">
+                <%=data.settings.s.book_link_name%>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="mb-3">
+
+          <div class="generic-card rounded shadow-sm">
+            <div class="generic-card-image-holder">
+              <i class="bi bi-envelope-at generic-card-icon"></i>              
+            </div>
+            <div class="generic-card-content">
+              <p>
+                Envoyez-nous un e-mail si vous avez des questions ou si vous souhaitez prendre rendez-vous.
+              </p>
+
+              <a href="mailto:<%=data.settings.s.book_email%>" class="text-center generic-card-full-link btn btn-light">
+                <%=data.settings.s.book_email%>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="mb-3">
+
+          <div class="generic-card rounded shadow-sm">
+            <div class="generic-card-image-holder">
+              <i class="bi bi-telephone generic-card-icon"></i>                   
+            </div>
+            <div class="generic-card-content">
+              <p>
+                Appelez-nous pour planifier une rencontre ou discuter de vos préoccupations.
+              </p>
+
+              <a href="tel:<%=data.settings.s.book_phone_raw%>" class="text-center generic-card-full-link btn btn-light">
+                <%=data.settings.s.book_phone%>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

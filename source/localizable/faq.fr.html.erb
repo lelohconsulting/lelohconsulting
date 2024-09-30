@@ -1,0 +1,59 @@
+---
+layout: about-layout
+active: about
+subActive: faq
+title: F.A.Q
+titleDescription: N'hésitez pas à nous contacter si vous avez des questions. Nous sommes conscients que commencer une thérapie, surtout pour la première fois, peut être une expérience intimidante. Voici quelques questions fréquemment posées pour vous aider à naviguer dans le processus de réservation.
+description: Frequently asked questions
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mt-3 mb-0">
+          <li class="breadcrumb-item">
+            <a href="<%=lang_helper%>">
+              <%= t(:home) %>
+            </a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="<%=lang_helper%>about-us">
+              <%= t(:about) %>
+            </a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            F.A.Q
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- F.A.Q -->
+<div class="section-lg">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="accordion accordion-flush mb-5" id="faq-accordion">
+          <% data.faq.f.each do |faq| %>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#<%=faq.link%>" aria-expanded="false" aria-controls="<%=faq.link%>">
+                  <%=faq.title%>
+                </button>
+              </h2>
+              <div id="<%=faq.link%>" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                <div class="accordion-body">
+                  <%=faq.description%>
+                </div>
+              </div>
+            </div>
+            <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

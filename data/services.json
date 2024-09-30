@@ -1,0 +1,124 @@
+{
+  "s": [
+    {
+      "isBook": "true",
+      "title": "Individual Therapy Sessions",
+      "link": "Individual-Therapy-Sessions",
+      "titleFr": "Séances de thérapie individuelle",
+      "image": "https://picsum.photos/400?random=1",
+      "illustration": "/images/undraw_About_me_re_82bv.png",
+      "description": "Our individual therapy sessions are tailored for people of Color . Our approaches are rooted in a deep understanding of diversity of the cultural backgrounds and experiences of clients. We are sensitive to  unique challenges faced by people of color due to systemic racism, discrimination and cultural differences.",
+      "descriptionFr": "Nos séances de thérapie individuelle sont adaptées aux personnes de couleur. Nos approches sont enracinées dans une compréhension approfondie de la diversité des origines culturelles et des expériences des clients. Nous sommes sensibles aux défis uniques auxquels les personnes de couleur font face en raison du racisme systémique, de la discrimination et des différences culturelles."
+    },
+    {
+      "isBook": "true",
+      "title": "Group Therapy Programs",
+      "link": "Group-Therapy-Programs",
+      "titleFr": "Programmes de thérapie de groupe",
+      "image": "https://picsum.photos/400?random=2",
+      "illustration": "/images/Group-Therapy-Programs.png",
+      "description": "Structured group therapy sessions to foster community support, share experiences, and learn from one another in a supportive and normalized environment.",
+      "descriptionFr": "Séances de thérapie de groupe structurées visant à favoriser le soutien communautaire, à partager des expériences et à apprendre les uns des autres dans un environnement favorable et normalisé."
+    },
+    {
+      "isBook": "true",
+      "title": "Couples Counseling",
+      "link": "Couples-Counseling",
+      "titleFr": "Conseil conjugal",
+      "image": "https://picsum.photos/400?random=3",
+      "illustration": "/images/undraw_Couple_re_94tl.png",
+      "description": "Therapy sessions for couples to enhance communication, strengthen relationships, and navigate challenges together with a focus on maintaining mental health.",
+      "descriptionFr": "Séances de thérapie pour les couples visant à améliorer la communication, renforcer les relations et surmonter les défis ensemble, avec un accent particulier sur le maintien de la santé mentale."
+    },
+    {
+      "isBook": "true",
+      "title": "Family Therapy",
+      "link": "Family-Therapy",
+      "titleFr": "Thérapie familiale",
+      "image": "https://picsum.photos/400?random=4",
+      "illustration": "/images/Family-Therapy.png",
+      "description": "Therapeutic interventions involving family members to improve relationships, address family dynamics, and support each member's mental health.",
+      "descriptionFr": "Interventions thérapeutiques impliquant les membres de la famille pour améliorer les relations, aborder la dynamique familiale et soutenir la santé mentale de chaque membre."
+    },
+    {
+      "isBook": "true",
+      "title": "Art and Expressive Therapies",
+      "link": "Art-and-Expressive-Therapies",
+      "titleFr": "Thérapies artistiques et expressives",
+      "image": "https://picsum.photos/400?random=9",
+      "illustration": "/images/Art-Expressive-Therapies.png",
+      "description": "Therapeutic interventions incorporating creative expression, such as art, music, or drama, to facilitate emotional exploration and healing.",
+      "descriptionFr": "Interventions thérapeutiques intégrant l'expression créative, telle que l'art, la musique ou le théâtre, pour faciliter l'exploration émotionnelle et la guérison."
+    },
+    {
+      "isBook": "true",
+      "title": "Customized Wellness Plans",
+      "link": "Customized-Wellness-Plans",
+      "titleFr": "Plans personnalisés de bien-être",
+      "image": "https://picsum.photos/400?random=12",
+      "illustration": "/images/undraw_Creation_process_re_kqa9.png",
+      "description": "Developing personalized mental health wellness plans for clients, incorporating daily practices and routines to support ongoing mental well-being.",
+      "descriptionFr": "Élaboration de plans personnalisés de bien-être mental pour les clients, intégrant des pratiques quotidiennes et des routines pour soutenir le bien-être mental continu."
+    },
+    {
+      "isBook": "true",
+      "title": "Online Therapy Options",
+      "link": "Online-Therapy-Options",
+      "titleFr": "Options de thérapie en ligne",
+      "image": "https://picsum.photos/400?random=5",
+      "illustration": "/images/Online-Therapy-Options.png",
+      "description": "Virtual therapy sessions for individuals or groups, providing flexibility and accessibility for those with busy schedules or geographical constraints.",
+      "descriptionFr": "Séances de thérapie virtuelle pour les individus ou les groupes, offrant flexibilité et accessibilité aux personnes ayant des horaires chargés ou des contraintes géographiques."
+    },    
+    {
+      "isBook": "true",
+      "title": "Workshops and Psychoeducational Programs",
+      "link": "Workshops-and-Psychoeducational-Programs",
+      "titleFr": "Workshops and Psychoeducational Programs",
+      "image": "https://picsum.photos/400?random=6",
+      "illustration": "/images/Workshops-Psychoeducational-Programs.png",
+      "description": "Educational programs and workshops focused on mental health awareness, coping strategies, stress management, and emotional resilience.",
+      "descriptionFr": "Programmes éducatifs et ateliers axés sur la sensibilisation à la santé mentale, les stratégies d'adaptation, la gestion du stress et la résilience émotionnelle."
+    },
+    {
+      "isBook": "true",
+      "title": "Telehealth Services",
+      "link": "Telehealth-Services",
+      "titleFr": "Services de télésanté",
+      "image": "https://picsum.photos/400?random=12",
+      "illustration": "/images/Telehealth-Services.png",
+      "description": "Offering remote mental health services through telehealth platforms, ensuring accessibility and continuity of care.",
+      "descriptionFr": "Fournir des services de santé mentale à distance via des plateformes de télésanté, garantissant l'accessibilité et la continuité des soins."
+    },  
+    {
+      "isBook": "true",
+      "title": "Cultural Sensitivity Training",
+      "link": "Cultural-Sensitivity-Training",
+      "titleFr": "Formation à la sensibilité culturelle",
+      "image": "https://picsum.photos/400?random=8",
+      "illustration": "/images/Cultural-Sensitivity-Training.png",
+      "description": "Specialized programs and resources to enhance therapists' cultural competence, ensuring that services are inclusive and respectful of diverse backgrounds.",
+      "descriptionFr": "Programmes et ressources spécialisés pour renforcer la compétence culturelle des thérapeutes, garantissant que les services soient inclusifs et respectueux des divers milieux culturels."
+    },    
+    {
+      "isBook": "false",
+      "title": "Self-Help Resources",
+      "link": "Self-Help-Resources",
+      "titleFr": "Ressources d'auto-assistance",
+      "image": "https://picsum.photos/400?random=10",
+      "illustration": "/images/Self-Help-Resources.png",
+      "description": "Curated resources, reading materials, and tools that individuals can use independently to further their understanding of mental health and well-being.",
+      "descriptionFr": "Ressources sélectionnées, matériaux de lecture et outils que les individus peuvent utiliser de manière autonome pour approfondir leur compréhension de la santé mentale et du bien-être."
+    },          
+    {
+      "isBook": "true",
+      "title": "Community Outreach and Events",
+      "link": "Community-Outreach-and-Events",
+      "titleFr": "Sensibilisation communautaire et événements",
+      "image": "https://picsum.photos/400?random=12",
+      "illustration": "/images/undraw_Conversation_re_c26v.png",
+      "description": "Engaging with the community through events, seminars, or partnerships to promote mental health awareness and reduce stigma.",
+      "descriptionFr": "Engagement avec la communauté à travers des événements, des séminaires ou des partenariats pour promouvoir la sensibilisation à la santé mentale et réduire la stigmatisation."
+    }
+  ]
+}

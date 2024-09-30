@@ -1,0 +1,204 @@
+---
+layout: layout
+active: home
+title: Home
+description: Leloh Therapy, Dans notre pratique, nous embrassons la diversité des individus et des expériences traumatisantes, offrant un havre réconfortant où différentes thérapies sont normalisées pour favoriser le renouvellement de l'esprit individuel
+---
+
+<div class="section hero-section">
+  <div class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-12 col-lg-6">
+
+          <div class="section-sm">
+            <h1 class="text-center title-underline title-underline-center title-underline-md">
+              Nous normalisons la thérapie
+            </h1>
+            <h5 class="text-center">
+              Dans notre pratique, nous embrassons la diversité des individus et des expériences traumatisantes, offrant un havre réconfortant où différentes thérapies sont normalisées pour favoriser le renouvellement de l'esprit individuel
+            </h5>
+            <h5 class="text-center">
+              Découvrez la guérison Des séances de thérapie gratuites de 20 minutes sont disponibles
+            </h5>
+          </div>
+
+          <button class="btn btn-book shadow-sm d-flex mx-auto"
+            data-bs-toggle="offcanvas" data-bs-target="#book-now-oc" aria-controls="book-now-oc">
+            <%= t(:book_a_session) %>
+          </button>
+          
+        </div>      
+      </div>
+    </div>
+  </div>
+  <div class="container">    
+    <div class="row justify-content-center mb-2">        
+      <% data.services.s.first(4).each do |service| %>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+        <div class="hero-card shadow-sm h-100">
+          <div class="hero-card-image-holder mb-4 d-flex align-items-center justify-content-center">
+            <img src="<%=service.illustration%>" class="img-fluid hero-card-image" data-entrance="from-bottom">
+          </div>          
+          
+          <div class="hero-card-title text-center position-absolute bottom-0">
+            <%=service.titleFr%>
+          </div>          
+          
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <div class="row text-end">
+      <div class="col-12">
+        <a href="/services" class="btn btn-lg btn-book">
+          
+          <i class="bi bi-plus-circle-fill"></i>
+          Voir tous les services
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wave-left"></div>
+  <div class="wave-right"></div>
+  <!-- <div class="wave section-border"></div> -->
+</div>
+
+<!-- We make therapy work for -->
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-12 col-lg-6">
+        <h1 class="title text-center title-underline title-underline-center title-underline-md">
+          Nous faisons en sorte que la thérapie fonctionne
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="naked-card">
+          <div class="naked-card-image-holder">
+            <img src="/images/credit_card.svg" class="naked-card-image img-fluid" data-entrance="from-bottom" />
+          </div>
+          <div class="naked-card-content text-center">
+            Leloh Therapy s'engage à offrir de la flexibilité dans l'accès à nos services. Nous acceptons les plans d'assurance des employeurs, facilitant ainsi pour vous la priorisation de votre santé mentale dans le cadre de votre couverture existante.
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="naked-card">
+          <div class="naked-card-image-holder">
+            <img src="/images/credit_card_payments.svg" class="naked-card-image img-fluid" data-entrance="from-bottom"/>
+          </div>
+          <div class="naked-card-content text-center">
+            Nous croyons en la accessibilité des services de santé mentale, nos frais de séance sont de 160 $ par séance, cela inclut la HST/QST applicable.
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="naked-card">
+          <div class="naked-card-image-holder">
+            <img src="/images/online_payments.svg" class="naked-card-image img-fluid" data-entrance="from-bottom"/>
+          </div>
+          <div class="naked-card-content text-center">              
+            Nous proposons des options d'échelle mobile. Cela signifie que nous nous efforçons de prendre en compte diverses situations financières, garantissant ainsi que un soutien de qualité en santé mentale soit accessible à tous.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="#book-a-session" class="btn btn-lg btn-book"
+        data-bs-toggle="offcanvas" data-bs-target="#book-now-oc" aria-controls="book-now-oc">
+          <%= t(:book_a_session) %>          
+        </a>
+      </div>
+    </div>
+  </div> 
+</div>
+
+
+<!-- Empowerement -->
+<div class="section-lg section-border-top section-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 mt-5 mb-5">
+              <img src="/images/couple-sits-together.jpg" class="img-fluid shadow rounded mb-3" alt="Couple sits together" 
+                   data-entrance="from-top"/>
+
+              <img src="/images/dark-braids-in-hair-and-red-lips-fashion.jpg" class="img-fluid shadow rounded" alt="Couple sits together" 
+                   data-entrance="from-bottom"/>
+            </div>
+            <div class="col-6">
+              <img src="/images/team-hands-linked-together.jpg" class="img-fluid shadow rounded mb-3" alt="Couple sits together" 
+                   data-entrance="from-top"/>
+
+              <img src="/images/family-in-matching-pyjamas.jpg" class="img-fluid shadow rounded" alt="Couple sits together" 
+                   data-entrance="from-bottom"/>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>        
+      </div>
+      <div class="col-12 col-md-4">
+        <h1 class="title title-underline title-underline-left title-underline-md">
+          <small>
+            Santé mentale
+          </small>
+          Votre bien-être compte
+        </h1>
+        <p>
+          Chez Leloh Therapy, nous comprenons que franchir le premier pas peut être une décision importante. Nous vous félicitons de donner la priorité à votre santé mentale, et nous sommes là pour vous soutenir dans votre parcours vers la découverte de soi, la guérison et l'autonomisation.
+        </p>
+        <p>
+          N'hésitez pas à nous contacter pour toute question ou pour planifier votre consultation. 
+          <br>
+          Votre bien-être est important, et nous sommes impatients de vous accompagner dans ce voyage transformateur.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="section-lg">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="title title-underline title-underline-sm title-underline-center text-center">
+          <small>
+            Questions fréquemment posées
+          </small>
+          F.A.Q
+        </h1>
+
+        <div class="accordion accordion-flush mb-5" id="faq-accordion">
+        <% data.faq.f.first(10).each do |faq| %>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#<%=faq.link%>" aria-expanded="false" aria-controls="<%=faq.link%>">
+                <%=faq.titleFr%>
+              </button>
+            </h2>
+            <div id="<%=faq.link%>" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+              <div class="accordion-body">
+                <%=faq.descriptionFr%>
+              </div>
+            </div>
+          </div>
+        <% end %>
+        </div>        
+      </div>
+      <div class="col-12 text-center">
+        <a href="<%=lang_helper%>faq" class="btn btn-lg btn-book text-center">
+          <i class="bi bi-plus-circle-fill"></i>
+          Plus de questions fréquemment posées
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
